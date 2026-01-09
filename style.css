@@ -22,26 +22,33 @@ section {
 h2 {
   color: #2c3e50;
 }
+
+/* Foto de perfil */
 .foto-perfil {
-  width: 200px;          /* tamanho da foto */
-  height: 200px;         /* altura igual à largura */
-  border-radius: 50%;    /* deixa a foto redonda */
-  object-fit: cover;     /* ajusta a imagem sem distorcer */
-  border: 4px solid #3498db; /* borda azul */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra suave */
+  width: 200px;          
+  height: 200px;         
+  border-radius: 50%;    
+  object-fit: cover;     
+  border: 4px solid #3498db; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }
 
+/* Layout da seção "Sobre mim" */
 .sobre-mim {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* texto à esquerda, foto à direita */
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* responsivo em telas menores */
 }
 
 .sobre-mim .texto {
   flex: 1;
   min-width: 250px;
+}
+
+.sobre-mim .foto {
+  flex-shrink: 0; /* impede a foto de encolher */
 }
 
 .sobre-mim .foto img {
@@ -52,6 +59,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Galeria */
 #galeria {
   margin: 20px;
   padding: 20px;
