@@ -86,3 +86,28 @@ h2 {
 .galeria-container img:hover {
   transform: scale(1.05);
 }
+.galeria-container figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.galeria-container img:hover {
+  transform: scale(1.05);
+}
+
+.galeria-container figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
