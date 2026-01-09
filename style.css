@@ -31,6 +31,27 @@ h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra suave */
 }
 
+.sobre-mim {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.sobre-mim .texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.sobre-mim .foto img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 #galeria {
   margin: 20px;
   padding: 20px;
